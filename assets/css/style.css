@@ -2,9 +2,17 @@ html, body {
     margin-right: 10%;
     margin-left: 10%;
     padding: 0%;
+    background: #fff !important;
+}
+hr {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 .header {
     text-align: center;
+}
+.white-background {
+  background-color: #fff;
 }
 #project-div{
     text-align: center;
@@ -21,7 +29,7 @@ html, body {
   }
 .main-content{
     text-align: center;
- 
+
 }
 .header .my-name {
     font-weight: 700;
@@ -62,6 +70,7 @@ html, body {
   }
   #portfolio{
     text-align: center;
+    background-color: #fff;
   }
   #list{
       text-align: left;
@@ -145,7 +154,7 @@ html, body {
 [class*="col-"] {
     width: 100%;
   }
-  
+
   @media only screen and (min-width: 600px) {
     /* For tablets: */
     .col-s-1 {width: 8.33%;}
@@ -161,7 +170,7 @@ html, body {
     .col-s-11 {width: 91.66%;}
     .col-s-12 {width: 100%;}
   }
-  
+
   @media only screen and (min-width: 768px) {
     /* For desktop: */
     .col-1 {width: 8.33%;}

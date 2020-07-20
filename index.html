@@ -2,6 +2,17 @@
 <html lang="en">
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138536922-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-138536922-1');
+    </script>
+
+    <!--- Meta --->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -10,42 +21,45 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    
-    <!--- Stylesheets ----> 
+
+    <!--- Stylesheets ---->
     <link rel='stylesheet' href='assets/css/animate.css' type='text/css'>
     <link rel="stylesheet" href="assets/css/skeleton.css" type="text/css">
     <link rel="stylesheet" href="assets/css/style.css" type='text/css'>
 </head>
 
 <body>
-    
-    <!---- Title -----> 
-    <div class="header">
+
+    <!---- Title ----->
+    <div class="header white-background">
         <img id="profileimg" src="assets/images/billybelot.jpg" alt='william-huang-profile'>
         <h3 class='animated' id='greeting'>Hello! My name is <strong class='my-name'>William Huang</strong></h3>
         <h5>Software Engineer located in New York</h5>
     </div>
-    <hr>
-    <section class="row">
-        
-        <!---- Introduction -----> 
+
+    <!-- Divider -->
+    <hr class='white-background'>
+
+    <section class="row white-background">
+
+        <!---- Introduction ----->
         <summary class="nine columns">
             <h3><i class="fa fa-user" aria-hidden="true"></i>About Me </h3>
             <p class="info">I am a <strong>full-stack software engineer</strong> looking for technical product management, blockchain architecture, and software engineering roles. I am passionate about building technologies that can change the world. Recently I worked as a blockchain architect at Fraktal designing and building blockchain networks and smart contracts. In my free time, I enjoy playing competitive chess, playing guitar, and reading.
-            
+
             <br /><br />
             Feel free to <a href='#contact'>contact</a> me with any questions, opportunties, or if you just want to chat :)
             </p>
         </summary>
 
-        <!---- Intro Buttons-----> 
+        <!---- Intro Buttons----->
         <nav class="three columns">
 
-            <button onclick="window.open('https://github.com/williamhuang0623');"> 
+            <button onclick="window.open('https://github.com/williamhuang0623');">
                 <img src='assets/images/github.svg' class='github-icon'/>
                 Github
             </button>
-            <button onclick="window.open('https://www.linkedin.com/in/williamhuang17/');"> 
+            <button onclick="window.open('https://www.linkedin.com/in/williamhuang17/');">
                 <img src='assets/images/linkedin.svg' class='linkedin-icon' />
                 LinkedIn
             </button>
@@ -54,22 +68,32 @@
         </nav>
     </section>
 
-    <hr>
-    
-    <!---- Portfolio -----> 
-    <div id="portfolio">
+    <!-- Divider -->
+    <hr class='white-background' />
+
+    <!---- Portfolio ----->
+    <div id="portfolio" class='white-background'>
         <h3> <i class="fa fa-briefcase" aria-hidden="true"></i>Projects</h3>
         <p>Fun apps and websites I have built, either for school or for previous jobs (displayed with permission). Hover above each block for a description of the project, and click to see the project in real life!</p>
-        
+
       <!--- Gallery --->
-    <div class="container-fluid" id='gallery' name='gallery'>
+    <div class="container-fluid white-background" id='gallery' name='gallery'>
           <div class="row row-10 row-horizontal-10">
+            <div class="col-md-6"> <a class="thumb-modern" data-lightgallery="item" href="https://flygetlost.com" target='_blank'>
+                <figure>
+                  <img src="https://getlost-misc.s3.us-east-2.amazonaws.com/home_illustration.svg" alt="getlost" class='gallery-pic'>
+                </figure>
+                <div class="thumb-modern__overlay">
+                    <p class='gallery-title'><strong>GetLost</strong>, built with MERN stack</p>
+                </div></a>
+            </div>
             <div class="col-md-6"> <a class="thumb-modern" data-lightgallery="item" href="https://wptatw.org/" target='_blank'>
                 <figure><img src="assets/images/music.jpg" alt="wptatw" class='gallery-pic'>
                 </figure>
                 <div class="thumb-modern__overlay">
                     <p class='gallery-title'><strong>World Piano Teacher Association (WPTATW)</strong>, built with NodeJS &amp; Bootstrap 4</p>
-                </div></a></div>
+                </div></a>
+            </div>
             <div class="col-md-6"><a class="thumb-modern" data-lightgallery="item" href="https://fraktalgroup.com/" target='_blank'>
                 <figure><img src="assets/images/network.jpg" alt="fraktal" class='gallery-pic'>
                 </figure>
@@ -109,15 +133,19 @@
           </div>
         </div>
     </div>
-    <hr>
-    
-    <div id="project-div">
+
+    <!-- Divider -->
+    <hr class='white-background' >
+
+    <div id="project-div" class='white-background'>
         <h3><img src='assets/images/experience.svg' class="fa fa-experience" aria-hidden="true" />Experience</h3>
         <div id="list">
-            
-            <!---- Professional Experience -----> 
+
+            <!---- Professional Experience ----->
             <h5><i class="fa fa-globe" aria-hidden="true"></i><b>Professional</b></h5>
             <ul>
+                <li><a href='https://flygetlost.com/' target='_blank'><strong>GetLost</strong></a>, Online Travel Agency specializing in cheap and last-minute mystery trips | Co-Founder</li>
+                <li><a href='https://wework.com/' target='_blank'><strong>WeWork</strong></a>, Contract Engineering Team | Software Engineering Intern</li>
                 <li><a href='https://fraktalgroup.com/' target="_blank"><strong>Fraktal Group</strong></a>, Blockchain and Tokeneconomics Advisory | Blockchain Architect &amp; Systems Engineer</li>
                 <li><a href='https://dancewithbilly.com/' target="_blank"><strong>Freelance</strong></a>, Building Web Apps with MERN (MongoDB, Express, ReactJS, and NodeJS) | Full-Stack Engineer</li>
                 <li><a href='http://nodecapital.io/' target="_blank"><strong>Node Capital</strong></a>, Data Science for Cryptocurrency Trading | Software Engineer</li>
@@ -125,8 +153,8 @@
                 <li><a href='https://drive.google.com/drive/folders/1J0rtV2u3K4YFisexW5FydxaSlsRYT3PO?usp=sharing'><strong>Pairi</strong></a>, Social Media and Web Development for Microbusinesses | Cofounder</li>
                 <li><a href='http://www.ryzerenewables.com/' target="_blank"><strong>Ryze Capital Partners</strong></a>, Private Equity in Energy and Industrial Development | Project Management </li>
             </ul>
-            
-            <!---- Volunteer Experience -----> 
+
+            <!---- Volunteer Experience ----->
             <h5><i class="fa fa-tasks" aria-hidden="true"></i><b>Volunteer</b></h5>
             <ul>
                 <li><a href='https://www.empirenyu.com/'><strong>Empire@NYU</strong></a>, Entrepreneurship Association | President &amp; Founder </li>
@@ -135,10 +163,12 @@
             </ul>
         </div>
     </div>
-    <hr>
-    
-    <!---- Contact Info -----> 
-    <div id="contact-info">
+
+    <!-- Divider -->
+    <hr class='white-background'/>
+
+    <!---- Contact Info ----->
+    <div id="contact-info" class='white-background'>
         <a name='contact'></a>
         <footer class="row">
 
@@ -148,7 +178,7 @@
                 <span class="pull-right1"><b><i class="fa fa-phone"></i> Phone:</b> (949)-945-4154 </span><br>
             </section>
 
-            <!---- Contact Form -----> 
+            <!---- Contact Form ----->
             <section class="six columns contact">
                 <h3><i class="fa fa-envelope"></i><b> Contact</b></h3>
                 <form action="https://formspree.io/williamhuang0623@gmail.com" method="POST">
@@ -168,7 +198,7 @@
         </footer>
     </div>
 
-    <!---- Scripts ----> 
+    <!---- Scripts ---->
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
